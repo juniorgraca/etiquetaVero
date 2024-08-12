@@ -1,0 +1,143 @@
+/* src/Tabela.css */
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+.inputChk{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: red;
+  width: 20px;
+  height: 10;
+
+}
+.areaInput{
+  align-items: center;
+  justify-content: center;
+}
+
+.tabela-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-section {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+ 
+}
+
+.area-dados {
+  display: inline-flexbox;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  display: flexbox;
+  width: 190px;
+
+
+}
+
+input {
+  width: 190px;
+  padding: 5px;
+}
+
+button {
+  width: 190px;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #d12f64;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+
+ 
+}
+
+button:hover {
+  background-color: #9b2e54;
+}
+
+table {
+  border-collapse: separate; /* Alterado para separar as bordas */
+  border-spacing: 10px; /* Espaçamento entre as colunas e linhas */
+  width: 100%;
+  max-width: 100%;
+  background-color: rebeccapurples;
+}
+
+th, td {
+  border: 1px solid black;
+  text-align: left;
+  background-image: url('./verologo.png');
+  background-size: 30%;
+  min-width: 30%;
+  max-width: 30%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Divida a tabela em 30 colunas */
+td:nth-child(1), th:nth-child(1) {
+  width: 3.33%; /* 100% / 30 = 3.33% */
+}
+td:nth-child(2), th:nth-child(2) {
+  width: 3.33%;
+}
+/* Continue para o restante das colunas */
+
+.codItem {
+  padding: 8px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  width: 65%;
+  min-width: 65%;
+  max-width: 65%;
+}
+
+.codItemBottom {
+  padding: 8px;
+  border-right: 1px solid black;
+  width: 65%;
+  min-width: 65%;
+  max-width: 65%;
+}
+h1{
+  margin-top: 10px;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+  .print-only {
+    display: block;
+  }
+}
+
+p{
+  font-size: 1rem;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  padding-top:13px;
+}
+.infotext{
+  color: red;
+ 
+  font-size: .83rem;
+}

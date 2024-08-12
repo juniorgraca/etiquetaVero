@@ -1,0 +1,90 @@
+/* src/Tabela.css */
+.tabela-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.info-section {
+  margin-bottom: 20px;
+}
+
+.area-dados {
+  display: flex;
+  flex-direction: column;
+  width: 300px; /* Ajuste a largura conforme necessário */
+}
+
+input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #d12f64;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9b2e54;
+}
+
+table {
+  border-collapse: separate; /* Alterado para separar as bordas */
+  border-spacing: 10px; /* Espaçamento entre as colunas e linhas */
+  width: 100%;
+  max-width: 100%;
+  background-color: rebeccapurples;
+}
+
+th, td {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+  background-image: url('./verologo.png');
+  background-size: 250px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Divida a tabela em 30 colunas */
+td:nth-child(1), th:nth-child(1) {
+  width: 3.33%; /* 100% / 30 = 3.33% */
+}
+td:nth-child(2), th:nth-child(2) {
+  width: 3.33%;
+}
+/* Continue para o restante das colunas */
+
+.codItem {
+  padding: 8px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  width: 45%;
+}
+
+.codItemBottom {
+  padding: 8px;
+  border-right: 1px solid black;
+  width: 45%;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+  .print-only {
+    display: block;
+  }
+}
